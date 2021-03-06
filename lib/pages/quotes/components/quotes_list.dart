@@ -17,7 +17,6 @@ class QuotesList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("build quotes list");
     final _quotesProvider = Provider.of<QuotesProvider>(context, listen: true);
     final List<QuotesModel> _quotes = selectedFilter == 0
         ? _quotesProvider.getQuote
